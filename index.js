@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 //importing the routes:
 const userRoutes = require('./routes/userRoutes');
@@ -11,6 +11,7 @@ const pharmacyRoutes = require('./routes/pharmacyRoutes');
 const app = express();
 app.use(express.json());
 
+//using the routes 1
 app.use("/users", userRoutes);
 app.use("/medicines", medicineRoutes);
 app.use("/pharmacies", pharmacyRoutes);
