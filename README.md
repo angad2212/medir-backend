@@ -23,6 +23,8 @@ Medir is a Node.js and Express.js backend system for managing APIs related to me
   - `POST /signup`: Register a user with hashed passwords.
   - `POST /login`: Authenticate user and issue a JWT.
   - `GET /favorites`: Retrieve favorite medicines (protected).
+  - `POST /favorites`: Add a medicine to favorites (protected).
+  - `DELETE /favorites/:id`: Remove a medicine from favorites (protected)
 
 ## Description
 Medir simplifies medicine and pharmacy management, enabling users to search medicines, view available pharmacies, and maintain personalized favorites. The secure JWT-based authentication ensures data protection.
