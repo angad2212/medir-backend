@@ -1,7 +1,8 @@
 const express = require('express');
-const mongoose = require('mongoose');
+const mongoose = require('./config/database');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5001;
+require("dotenv").config();
 
 //importing the routes:
 const userRoutes = require('./routes/userRoutes');
