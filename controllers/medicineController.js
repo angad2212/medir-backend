@@ -12,6 +12,7 @@ const getMedicines = async (req, res)=>{
 const getMedicineById = async (req, res)=>{
     try {
         const medicine = await Medicine.findById(req.params.id);
+        res.json(medicine);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
